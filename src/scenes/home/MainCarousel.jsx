@@ -70,7 +70,7 @@ const MainCarousel = () => {
                         backgroundAttachment:"fixed",
                     }}
                 />
-                {/*<Box
+                <Box
                     color="white"
                     padding="20px"
                     borderRadius="1px"
@@ -83,16 +83,16 @@ const MainCarousel = () => {
                     margin = { isNonMobile ? undefined : "0 auto"}
                     maxWidth = {isNonMobile ? undefined : "240px"}
                 >
-                    <Typography color={shades.secondary[200]}>-- NEW ITEMS</Typography>
-                    <Typography variant="h1">some type of sale</Typography>
+                    <Typography color="rgba(247, 191, 80, 1)">-- NEW ITEMS</Typography>
+                    <Typography variant="h1" fontFamily={"sans-serif"}>Southsidekicks is Launching!!</Typography>
                     <Typography 
                         fontWeight="bold" 
-                        color={shades.secondary[300]} 
+                        color="rgba(247, 191, 80, 1)"
                         sx={{ textDecoration: "underline"}}
                     >
                         Discover More
                     </Typography>
-                </Box> */}
+                </Box> 
             </Box>
         ))}
 

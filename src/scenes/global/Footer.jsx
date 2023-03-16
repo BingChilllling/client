@@ -63,12 +63,12 @@ const Footer = () => {
                 Contact Us
               </Typography>
               <Typography mb="30px">
-                50 north Whatever Blvd, Washington, DC 10501
+                Alfalfa Close Community 18, Accra, Ghana
               </Typography>
               <Typography mb="30px" sx={{ wordWrap: "break-word" }}>
-                Email: southsidekicks@gmail.com
+                Email: southsidekicks1@gmail.com
               </Typography>
-              <Typography mb="30px">(222)333-4444</Typography>
+              <Typography mb="30px">(+233) 059-166-9666</Typography>
             </Box>
           </Box>
         </Box>
