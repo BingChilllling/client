@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&family=Source+Sans+Pro&family=Sriracha&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Cinzel&family=Open+Sans&family=Roboto&family=Inter&family=Sriracha&display=swap');
+
 * {
   box-sizing: border-box;
 }

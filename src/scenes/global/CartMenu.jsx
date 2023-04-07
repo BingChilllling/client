@@ -12,7 +12,7 @@ import {
     setIsCartOpen,
 } from "../../state";
 import { useNavigate } from "react-router-dom";
-import { Remove } from "@mui/icons-material";
+
 
 const FlexBox = styled(Box)`
     display: flex;
@@ -60,7 +60,7 @@ const CartMenu = () => {
                             <CloseIcon />
                         </IconButton>
                     </FlexBox>
-                    {/* CART LIST*/}
+                    {/* CART LIST*/} 
                     <Box>
                         {cart.map((item) => (
                             <Box key={`${item.attributes.name}-${item.id}`}>

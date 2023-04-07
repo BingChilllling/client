@@ -7,7 +7,7 @@ import { shades } from "../../theme";
 import Payment from "./Payment";
 import Shipping from "./Shipping";
 import { loadStripe } from "@stripe/stripe-js";
-import { borderRadius } from "@mui/system";
+
 
 
 const stripePromise = loadStripe(
@@ -156,8 +156,6 @@ const initialValues = {
     street1: "",
     street2: "",
     city: "",
-    state: "",
-    zipCode: "",
   },
   shippingAddress: {
     isSameAddress: true,
@@ -167,8 +165,6 @@ const initialValues = {
     street1: "",
     street2: "",
     city: "",
-    state: "",
-    zipCode: "",
   },
   email: "",
   phoneNumber: "",
@@ -183,8 +179,6 @@ const checkoutSchema = [
       street1: yup.string().required("required"),
       street2: yup.string(),
       city: yup.string().required("required"),
-      state: yup.string().required("required"),
-      zipCode: yup.string().required("required"),
     }),
     shippingAddress: yup.object().shape({
       isSameAddress: yup.boolean(),
@@ -206,14 +200,6 @@ const checkoutSchema = [
       }),
       street2: yup.string(),
       city: yup.string().when("isSameAddress", {
-        is: false,
-        then: yup.string().required("required"),
-      }),
-      state: yup.string().when("isSameAddress", {
-        is: false,
-        then: yup.string().required("required"),
-      }),
-      zipCode: yup.string().when("isSameAddress", {
         is: false,
         then: yup.string().required("required"),
       }),
