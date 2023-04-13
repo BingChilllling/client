@@ -5,8 +5,6 @@ import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 
-
-
 const importAll = (r) =>
     r.keys().reduce((acc, item) => {
         acc[item.replace("./", "")] = r(item);
