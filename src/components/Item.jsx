@@ -18,14 +18,16 @@ const Item = ({item, width}) => {
 
     const {category, price, name, image} = item.attributes;
     const {
-        data: {
-          attributes: {
-            formats: {
-              medium: { url },
-            },
-          },
-        },
-      } = image;
+        data:{
+            attributes:{
+                formats:{
+                    medium:{
+                        url = ""
+                    } = {}
+                } = {}
+            } = {}
+        } = {}
+    } = image || {};
     
     return (
         <Box width={width}>
