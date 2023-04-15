@@ -25,7 +25,7 @@ const ItemDetails = () => {
 
     async function getItem(){
         const item = await fetch(
-            `http://localhost:1337/api/items/${itemIdInt}?populate=image`,
+            `https://strapi-yszw.onrender.com/api/items/${itemIdInt}?populate=image`,
             {method: "GET"}
         );
         const itemJson = await item.json();
@@ -34,7 +34,7 @@ const ItemDetails = () => {
 
     async function getItems() {
         const items =  await fetch(
-            `http://localhost:1337/api/items?populate=image`,
+            `https://strapi-yszw.onrender.com/api/items?populate=image`,
             { method: "GET"}
         );
         const itemsJson = await items.json();
@@ -55,7 +55,7 @@ const ItemDetails = () => {
                     alt={item?.name}
                     width="100%"
                     height="100%"
-                    src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+                    src={`${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
                     style={{ objectFit: "contain" }}
                 />
             </Box>
