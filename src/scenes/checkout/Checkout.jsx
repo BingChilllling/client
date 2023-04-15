@@ -49,7 +49,7 @@ const Checkout = () => {
       })),
     };
 
-    const response = await fetch("https://strapi-yszw.onrender.com/api/orders", {
+    const response = await fetch("http://localhost:1337/api/orders", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(requestBody),

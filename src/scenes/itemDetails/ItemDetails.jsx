@@ -25,7 +25,7 @@ const ItemDetails = () => {
 
     async function getItem(){
         const item = await fetch(
-            `https://strapi-yszw.onrender.com/api/items/${itemIdInt}?populate=image`,
+            `http://localhost:1337/api/items/${itemIdInt}?populate=image`,
             {method: "GET"}
         );
         const itemJson = await item.json();
@@ -34,7 +34,7 @@ const ItemDetails = () => {
 
     async function getItems() {
         const items =  await fetch(
-            `https://strapi-yszw.onrender.com/api/items?populate=image`,
+            `http://localhost:1337/api/items?populate=image`,
             { method: "GET"}
         );
         const itemsJson = await items.json();
