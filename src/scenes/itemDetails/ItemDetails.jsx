@@ -13,7 +13,6 @@ import Item from "../../components/Item";
 const ItemDetails = () => {
     const dispatch = useDispatch();
     const {itemId} = useParams();
-    const itemIdInt = parseInt(itemId, 10)
     const [value, setValue] = useState("description");
     const [count, setCount] = useState(1);
     const [item, setItem] = useState(null);
@@ -25,7 +24,7 @@ const ItemDetails = () => {
 
     async function getItem(){
         const item = await fetch(
-            `https://strapi-yszw.onrender.com/api/items/${itemIdInt}?populate=image`,
+            `https://strapi-yszw.onrender.com/api/items/${itemId}?populate=image`,
             {method: "GET"}
         );
         const itemJson = await item.json();
