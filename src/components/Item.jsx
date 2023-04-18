@@ -16,18 +16,7 @@ const Item = ({item, width}) => {
         palette: {neutral}, 
     } = useTheme();
 
-    const {category, price, name, image} = item.attributes;
-    const {
-        data:{
-            attributes:{
-                formats:{
-                    medium:{
-                        url = ""
-                    } = {}
-                } = {}
-            } = {}
-        } = {}
-    } = image || {};
+    const imageUrl = item.attributes.image.url;
     
     return (
         <Box width={width}>
@@ -40,7 +29,7 @@ const Item = ({item, width}) => {
                     alt={item.name}
                     width="300px"
                     height="400px"
-                    src={`${url}`}
+                    src={`https://strapi-yszw.onrender.com${imageUrl}`}
                     onClick={() => navigate(`/item/${item.id}`)}
                     style={{ cursor: "pointer" }}
                 />
