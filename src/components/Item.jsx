@@ -19,12 +19,10 @@ const Item = ({item, width}) => {
     const {category, price, name, image} = item.attributes;
     const {
         data:{
-            id:{
-                attributes:{
-                    formats:{
-                        medium:{
-                            url = ""
-                        } = {}
+            attributes:{
+                formats:{
+                    medium:{
+                        url = ""
                     } = {}
                 } = {}
             } = {}
