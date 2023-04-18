@@ -29,6 +29,7 @@ const Item = ({item, width}) => {
         } = {}
     } = image || {};
     
+    
     return (
         <Box width={width}>
             <Box 
@@ -40,7 +41,7 @@ const Item = ({item, width}) => {
                     alt={item.name}
                     width="300px"
                     height="400px"
-                    src={`https://strapi-yszw.onrender.com/unsafe/${url}`}
+                    src={`${url}`}
                     onClick={() => navigate(`/item/${item.id}`)}
                     style={{ cursor: "pointer" }}
                 />
