@@ -54,7 +54,7 @@ const ItemDetails = () => {
                     alt={item?.name}
                     width="100%"
                     height="100%"
-                    src={`https://strapi-yszw.onrender.com${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+                    src={`cloudinary://542657716749472:8Pz11nnrjvtYOaOMfpatog7LKMc@dvaj8zlde`}
                     style={{ objectFit: "contain" }}
                 />
             </Box>

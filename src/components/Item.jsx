@@ -41,7 +41,7 @@ const Item = ({item, width}) => {
                     alt={item.name}
                     width="300px"
                     height="400px"
-                    src={`https://strapi-yszw.onrender.com${url}`}
+                    src={`cloudinary://542657716749472:8Pz11nnrjvtYOaOMfpatog7LKMc@dvaj8zlde`}
                     onClick={() => navigate(`/item/${item.id}`)}
                     style={{ cursor: "pointer" }}
                 />

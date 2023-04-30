@@ -70,7 +70,7 @@ const CartMenu = () => {
                                             alt={item?.name}
                                             width="123px"
                                             height="164px"
-                                            src={`https://strapi-yszw.onrender.com${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+                                            src={`cloudinary://542657716749472:8Pz11nnrjvtYOaOMfpatog7LKMc@dvaj8zlde`}
                                         />
                                     </Box>
                                     <Box flex=" 1 1 60%">
