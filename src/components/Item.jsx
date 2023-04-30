@@ -16,8 +16,18 @@ const Item = ({item, width}) => {
         palette: {neutral}, 
     } = useTheme();
 
-    const {category, price, name} = item.attributes;
-    
+    const {category, price, name, image} = item.attributes;
+    const {
+        data:{
+            attributes:{
+                formats:{
+                    medium:{
+                        url = ""
+                    } = {}
+                } = {}
+            } = {}
+        } = {}
+    } = image || {};
     
     
     return (
@@ -31,7 +41,7 @@ const Item = ({item, width}) => {
                     alt={item.name}
                     width="300px"
                     height="400px"
-                    src={`cloudinary://542657716749472:8Pz11nnrjvtYOaOMfpatog7LKMc@dvaj8zlde`}
+                    src={`${url}`}
                     onClick={() => navigate(`/item/${item.id}`)}
                     style={{ cursor: "pointer" }}
                 />
